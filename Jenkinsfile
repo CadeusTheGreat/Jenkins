@@ -1,7 +1,7 @@
 pipeline{
         agent any
         stages{
-                if (not filexists '~/jenkins-tutorial-test'){
+                if (not filexists('~/jenkins-tutorial-test')){
                     stage('Make Directory'){
                         steps{
                             sh "mkdir ~/jenkins-tutorial-test"
